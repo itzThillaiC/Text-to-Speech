@@ -7,7 +7,7 @@ from playsound import playsound
 
 # Initializing Window metrics
 root = Tk()
-root.geometry("400*350")
+root.geometry('400x350')
 root.configure(bg='white')
 root.title("TC's Text-to-Speech")
 
@@ -26,9 +26,9 @@ entry_field.place(x=20, y=100)
 # TTS function
 def Text_to_Speech():
     Msg = entry_field.get()
-    speech = gTTS(text=Message)
-    speech.save('Text-audio.mp3')
-    playsound('Text-audio.mp3')
+    speech = gTTS(text=str(Message))
+    speech.save('Textaudio.mp3')
+    playsound('Textaudio.mp3')
 
 
 # Exit
