@@ -21,3 +21,21 @@ Label(root, text="Enter Text", font='arial 20 bold',
 
 entry_field = Entry(root, textvariable=Txt, width='50')
 entry_field.place(x=20, y=100)
+
+
+# TTS function
+def Text_to_Speech():
+    Msg = entry_field.get()
+    speech = gTTS(text=Message)
+    speech.save('Text-audio.mp3')
+    playsound('Text-audio.mp3')
+
+
+# Exit
+def Exit():
+    root.destroy()
+
+
+# Reset
+def reset():
+    Txt.set("")
