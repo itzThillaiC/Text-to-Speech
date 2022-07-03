@@ -39,3 +39,14 @@ def Exit():
 # Reset
 def reset():
     Txt.set("")
+
+
+# Defining Buttons
+Button(root, text="PLAY", font='arial 20 bold',
+       command=Text_to_Speech, width='4').place(x=25, y=140)
+Button(root, font='arial 20 bold', text='EXIT', width='4',
+       command=Exit, bg='OrangeRed1').place(x=100, y=140)
+Button(root, font='arial 20 bold', text='RESET',
+       width='6', command=reset).place(x=175, y=140)
+
+root.mainloop()
