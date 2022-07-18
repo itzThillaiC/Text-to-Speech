@@ -20,6 +20,7 @@ Label(root, text="Enter Text", font='arial 20 bold',
       bg='white smoke').place(x=20, y=60)
 
 entry_field = Entry(root, textvariable='Txt', width='50')
+entry_field.place(x=20, y=100)
 
 
 # # TTS function
